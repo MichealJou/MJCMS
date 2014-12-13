@@ -5,7 +5,7 @@
   <artifactId>MJCMS</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>MJCMS Maven Webapp</name>
+  <name>MJ</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
