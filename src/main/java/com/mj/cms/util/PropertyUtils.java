@@ -17,6 +17,8 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
+import com.shishuo.cms.constant.AppConfig;
+
 /**
  * 属性工具类
  * 
@@ -56,8 +58,7 @@ public class PropertyUtils extends PropertyPlaceholderConfigurer {
 	 * @return
 	 */
 	public static String getRoot() {
-		String rootKey = "mjcms.cms.root";
-		String cmsRoot = System.getProperty(rootKey);
+		String cmsRoot = System.getProperty(AppConfig.ROOTKEY);
 		Enumeration<?> enu = System.getProperties().propertyNames();
 		if(cmsRoot.endsWith(java.io.File.separatorChar+"")){
 			cmsRoot = cmsRoot.substring(0, cmsRoot.length()-1);
